@@ -3,19 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sedan&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sedan&display=swap" rel="stylesheet">
   <title>Mom's Memory Map</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
 </head>
 <body>
   <h1>
     Mom's Memory Map
     <span class="creator">made by trisha.</span>
   </h1>
+  <div id="authBox">
+  <input type="email" id="email" placeholder="Email">
+  <input type="password" id="password" placeholder="Password">
+  <button id="loginBtn">Log In</button>
+  <button id="logoutBtn">Log Out</button>
+  <p id="authStatus"></p>
+  </div>
+  <button id="addMemoryBtn" style="display:none;">Add Memory</button>
+  <div id="memoryForm" style="display:none;">
+    <input type="text" id="memoryTitle" placeholder="Memory title">
+    <input type="text" id="memoryLocation" placeholder="City or place">
+    <input type="text" id="memoryURL" placeholder="Cloudinary Image/Video URL">
+    <select id="memoryType">
+      <option value="photo">Photo</option>
+      <option value="video">Video</option>
+    </select>
+    <button id="submitMemory">Submit</button>
+  </div>
   <div id="map" style="height: 90vh;"></div>
-
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="script.js"></script>
 </body>

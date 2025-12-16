@@ -7,21 +7,43 @@ body {
 }
 
 h1 {
+  height: 50px;
+  padding-top: 20px;
   margin: 10px;
   color: #ffffff;
   font-family: 'Sedan', Georgia, serif;
 }
 
 h1 .creator {
-  position: absolute;          
-  top: 10px;                   
-  right: 15px;                 
+  padding-top: 20px;
+  padding-right: 15px;               
   font-size: 0.5em;            
   font-weight: normal;
   font-family: 'Sedan', Georgia, serif;          
   color: #ffffff;                  
   opacity: 0.8;                
 }
+
+input[type="email"],
+input[type="password"] {
+  width: 250px;                     
+  padding: 10px 15px;               
+  margin: 5px 0;                   
+  border: 2px solid #FFB6C1;        
+  font-size: 16px;                   
+  outline: none;                     
+  box-sizing: border-box;
+  transition: all 0.2s ease;        
+  background-color: white;           
+  color: #FFB6C1;                      
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #FFB6C1;  
+  opacity: 1;      
+}
+
 
 .leaflet-popup-content img, .leaflet-popup-content video {
   border-radius: 10px;
@@ -37,4 +59,54 @@ h1 .creator {
   font-size: 16px;                
   color: #FFB6C1;                
   text-align: center;             
+}
+
+/* base button style */
+button {
+  font-family: 'Sedan', Georgia, serif;
+  font-size: 16px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#addMemoryBtn {
+  display: block;
+  margin: 20px auto;         
+  background-color: white;
+  color: #FFB6C1;            
+}
+
+#addMemoryBtn:hover {
+  background-color: #FFB6C1;  
+  color: white;           
+}
+
+#loginBtn, #logoutBtn {
+  display: inline-block;       
+  background-color: white;
+  color: #FFB6C1;
+  margin: 5px;
+}
+
+#loginBtn:hover, #logoutBtn:hover {
+  background-color: #FFB6C1;
+  color: white;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #FFB6C1;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.delete-btn:hover {
+  background-color: #FFB6C1;
+  color: white;
 }
