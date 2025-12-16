@@ -7,7 +7,7 @@ Click pins to view photos/videos and add new memories using the **Add Memory** b
 
 ## 🌐 Live Demo
 
-[View Live Memory Map]([https://your-username.github.io/your-repo-name/](https://trishadar.github.io/MemoryMap/))
+[View Live Memory Map](https://trishadar.github.io/MemoryMap/)
 
 ---
 
