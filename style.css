@@ -44,6 +44,14 @@ input[type="password"]::placeholder {
   opacity: 1;      
 }
 
+#memoryControls {
+  position: absolute;    
+  bottom: 20px;           
+  left: 20px;              
+  z-index: 1000;           
+  padding: 10px;
+  border-radius: 15px;
+}
 
 .leaflet-popup-content img, .leaflet-popup-content video {
   border-radius: 10px;
@@ -76,13 +84,44 @@ button {
 #addMemoryBtn {
   display: block;
   margin: 20px auto;         
-  background-color: white;
-  color: #FFB6C1;            
+  background-color: #FFB6C1;
+  color: white;            
 }
 
-#addMemoryBtn:hover {
+#memoryControls button[type="submit"]:hover {
   background-color: #FFB6C1;  
   color: white;           
+}
+
+#memoryControls input,
+#memoryControls button[type="submit"] {
+  display: block;
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  border-radius: 15px;
+  border: 1px solid #FFB6C1;
+  color: #FFB6C1;
+  background-color: white;
+  font-size: 14px;
+  width: 200px;
+  box-sizing: border-box;
+}
+
+#memoryForm {
+  display: none;                
+  background-color: rgba(255, 255, 255, 0.5); 
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  margin-top: 10px;             
+}
+
+input[type="memoryTitle"]::placeholder,
+input[type="memoryLocation"]::placeholder,
+input[type="memoryType"]::placeholder,
+input[type="memoryURL"]::placeholder {
+  color: #FFB6C1;  
+  opacity: 1;      
 }
 
 #loginBtn, #logoutBtn {

@@ -25,16 +25,15 @@
   <button id="logoutBtn">Log Out</button>
   <p id="authStatus"></p>
   </div>
-  <button id="addMemoryBtn" style="display:none;">Add Memory</button>
-  <div id="memoryForm" style="display:none;">
-    <input type="text" id="memoryTitle" placeholder="Memory title">
-    <input type="text" id="memoryLocation" placeholder="City or place">
-    <input type="text" id="memoryURL" placeholder="Cloudinary Image/Video URL">
-    <select id="memoryType">
-      <option value="photo">Photo</option>
-      <option value="video">Video</option>
-    </select>
-    <button id="submitMemory">Submit</button>
+  <div id="memoryControls">
+    <button id="addMemoryBtn">Add Memory</button>
+    <form id="memoryForm" style="display:none;">
+      <input type="memoryTitle" id="memoryTitle" placeholder="memory title" required>
+      <input type="memoryLocation" id="memoryLocation" placeholder="location" required>
+      <input type="memoryType" id="memoryType" placeholder="photo/video" required>
+      <input type="memoryURL" id="memoryURL" placeholder="image/video URL" required>
+      <button type="submit">Submit</button>
+    </form>
   </div>
   <div id="map" style="height: 90vh;"></div>
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
