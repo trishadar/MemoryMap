@@ -1,0 +1,40 @@
+body {
+  font-family: 'Sedan', Georgia, serif;
+  text-align: center;
+  background: #FFB6C1;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 10px;
+  color: #ffffff;
+  font-family: 'Sedan', Georgia, serif;
+}
+
+h1 .creator {
+  position: absolute;          
+  top: 10px;                   
+  right: 15px;                 
+  font-size: 0.5em;            
+  font-weight: normal;
+  font-family: 'Sedan', Georgia, serif;          
+  color: #ffffff;                  
+  opacity: 0.8;                
+}
+
+.leaflet-popup-content img, .leaflet-popup-content video {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.leaflet-popup.custom-popup .leaflet-popup-tip {
+    display: none;
+}
+
+.leaflet-popup.custom-popup .leaflet-popup-content {
+  font-family: 'Sedan', Georgia, serif;
+  font-size: 16px;                
+  color: #FFB6C1;                
+  text-align: center;             
+}

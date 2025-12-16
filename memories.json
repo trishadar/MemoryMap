@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Cozumel 2018",
+    "lat": 20.513098,
+    "lng": -86.851577,
+    "type": "photo",
+    "url": "assets/cozumel_1.jpg"
+  },
+  {
+    "title": "New York 2015",
+    "lat": 40.689313,
+    "lng": -74.043814,
+    "type": "photo",
+    "url": "assets/ny_1.jpg"
+  },
+  {
+    "title": "India 2011",
+    "lat": 16.678985,
+    "lng": 74.457317,
+    "type": "photo",
+    "url": "assets/india_1.jpg"
+  },
+  {
+    "title": "Atlanta 2016",
+    "lat": 33.737017,
+    "lng": -84.398252,
+    "type": "photo",
+    "url": "assets/atlanta_1.jpg"
+  }
+]
