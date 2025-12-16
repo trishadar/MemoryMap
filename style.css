@@ -116,10 +116,7 @@ button {
   margin-top: 10px;             
 }
 
-input[type="memoryTitle"]::placeholder,
-input[type="memoryLocation"]::placeholder,
-input[type="memoryType"]::placeholder,
-input[type="memoryURL"]::placeholder {
+input[type="text"]::placeholder {
   color: #FFB6C1;  
   opacity: 1;      
 }

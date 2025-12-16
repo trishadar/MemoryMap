@@ -96,13 +96,14 @@ async function getLatLng(location) {
   return null;
 }
 
-document.getElementById('submitMemory').addEventListener('click', async () => {
+document.getElementById('memoryForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
   const title = document.getElementById('memoryTitle').value;
   const location = document.getElementById('memoryLocation').value;
-  const url = document.getElementById('memoryURL').value;
   const type = document.getElementById('memoryType').value;
+  const url = document.getElementById('memoryURL').value;
 
-  if(!title || !location || !url) return alert('Fill all fields');
+  if(!title || !location || !type || !url) return alert('Fill all fields');
 
   const coords = await getLatLng(location);
   if(!coords) return alert('Location not found');
@@ -136,7 +137,9 @@ document.getElementById('submitMemory').addEventListener('click', async () => {
     className: 'custom-popup'
   }).openPopup();
 
+  // hide form and reset inputs
   document.getElementById('memoryForm').reset();
+  document.getElementById('memoryForm').style.display = 'none';
 });
 
 function loadMemories() {
