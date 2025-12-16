@@ -26,5 +26,12 @@
     "lng": -84.398252,
     "type": "photo",
     "url": "assets/atlanta_1.jpg"
+  },
+  {
+    "title": "Florida 2014",
+    "lat": 30.418187,
+    "lng": -87.240000,
+    "type": "photo",
+    "url": "assets/florida_1.jpg"
   }
 ]
